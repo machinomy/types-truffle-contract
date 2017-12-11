@@ -4,6 +4,7 @@ declare module 'truffle-contract' {
     namespace contract {
         export interface TruffleContract<A> {
             new (opts?: Web3.TxData): Promise<A>
+            at(address: string): Promise<A>
             deployed (): Promise<A>
             setProvider (provider: Web3.Provider): void
         }

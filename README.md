@@ -2,5 +2,5 @@
 
 # Installation
 ```
-yarn add @machinomy/types-truffle-contract -D
+yarn add https://github.com/machinomy/types-truffle-contract -D
 ```

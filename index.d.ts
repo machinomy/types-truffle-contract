@@ -6,7 +6,13 @@ declare module 'truffle-contract' {
             new (opts?: Web3.TxData): Promise<A>
             at(address: string): Promise<A>
             deployed (): Promise<A>
+
             setProvider (provider: Web3.Provider): void
+            setNetwork (networkId: string | number): TruffleContract<A>
+            resetAddress (): TruffleContract<A>
+
+            hasNetwork (networkId: string | number): boolean
+            isDeployed (): boolean
         }
 
         export interface TransactionEvent {

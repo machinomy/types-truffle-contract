@@ -8,8 +8,8 @@ declare module 'truffle-contract' {
             deployed (): Promise<A>
 
             setProvider (provider: Web3.Provider): void
-            setNetwork (networkId: string | number): TruffleContract<A>
-            resetAddress (): TruffleContract<A>
+            setNetwork (networkId: string | number): void
+            resetAddress (): void
 
             hasNetwork (networkId: string | number): boolean
             isDeployed (): boolean

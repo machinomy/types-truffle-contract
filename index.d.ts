@@ -7,7 +7,7 @@ declare module 'truffle-contract' {
     }
 
     export interface TruffleContract<A> {
-      'new' (opts?: Web3.TxData): Promise<A & DeployedContract>
+      'new' (...args: any[]): Promise<A & DeployedContract> // No Enforcement
       at (address: string): Promise<A & DeployedContract>
       deployed (): Promise<A & DeployedContract>
 

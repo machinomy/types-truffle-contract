@@ -11,6 +11,7 @@ declare module 'truffle-contract' {
       at (address: string): Promise<A & DeployedContract>
       deployed (): Promise<A & DeployedContract>
 
+      defaults (params: Web3.CallData): void
       setProvider (provider: Web3.Provider): void
       setNetwork (networkId: string | number): void
       resetAddress (): void

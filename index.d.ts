@@ -16,6 +16,9 @@ declare module 'truffle-contract' {
       setNetwork (networkId: string | number): void
       resetAddress (): void
 
+      link <B>(instance: TruffleContract<B>): void
+      link (name: string, address: string): void
+
       hasNetwork (networkId: string | number): boolean
       isDeployed (): boolean
     }

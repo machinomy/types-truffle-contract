@@ -23,14 +23,19 @@ declare module 'truffle-contract' {
       isDeployed (): boolean
     }
 
-    export interface TransactionEvent {
+    export interface AnyTransactionEvent {
       event: string
       args: any
     }
 
+    export interface TransactionEvent<A> {
+      event: string
+      args: A
+    }
+
     export interface TransactionResult {
       tx: string
-      logs: Array<TransactionEvent>
+      logs: Array<AnyTransactionEvent>
       receipt: Web3.TransactionReceipt
     }
   }

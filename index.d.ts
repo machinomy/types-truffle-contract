@@ -1,10 +1,12 @@
 declare module 'truffle-contract' {
-  import Web3 = require('web3')
+  import * as Web3 from 'web3'
 
   namespace contract {
     export interface DeployedContract {
       address: string
     }
+
+    export type HexString = string
 
     export interface TruffleContract<A> {
       'new' (...args: any[]): Promise<A & DeployedContract> // No Enforcement
@@ -21,6 +23,9 @@ declare module 'truffle-contract' {
 
       hasNetwork (networkId: string | number): boolean
       isDeployed (): boolean
+
+      abi: object
+      bytecode: HexString
     }
 
     export interface AnyTransactionEvent {

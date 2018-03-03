@@ -1,6 +1,6 @@
 {
   "name": "@machinomy/types-truffle-contract",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "TypeScript declaration for truffle-contract",
   "main": "index.d.ts",
   "types": "index.d.ts",

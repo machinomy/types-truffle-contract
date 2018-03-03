@@ -24,7 +24,7 @@ declare module 'truffle-contract' {
       hasNetwork (networkId: string | number): boolean
       isDeployed (): boolean
 
-      abi: object
+      abi: Array<Web3.AbiDefinition>
       bytecode: HexString
     }
 

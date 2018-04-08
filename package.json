@@ -15,8 +15,8 @@
   },
   "homepage": "https://github.com/machinomy/types-truffle-contract#readme",
   "dependencies": {
+    "@machinomy/types-web3": "^0.0.4",
     "truffle-contract": "^3.0.0",
-    "web3": "^0.20.2",
-    "web3-typescript-typings": "^0.9.10"
+    "web3": "^0.20.2"
   }
 }

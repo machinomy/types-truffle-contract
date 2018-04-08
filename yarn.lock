@@ -2,6 +2,12 @@
 # yarn lockfile v1
 
 
+"@machinomy/types-web3@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@machinomy/types-web3/-/types-web3-0.0.4.tgz#aca033c0cabfc89757511410f5d5149af17fb497"
+  dependencies:
+    bignumber.js "^4.0.2"
+
 ajv@^5.1.1:
   version "5.5.1"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-5.5.1.tgz#b38bb8876d9e86bee994956a04e721e88b248eb2"
@@ -101,12 +107,6 @@ truffle-contract@^3.0.0:
 utf8@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/utf8/-/utf8-2.1.2.tgz#1fa0d9270e9be850d9b05027f63519bf46457d96"
-
-"web3-typescript-typings@https://github.com/0xProject/web3-typescript-typings":
-  version "0.7.1"
-  resolved "https://github.com/0xProject/web3-typescript-typings#79b24fa42a94eaa78ff175121d9580c5fcde5119"
-  dependencies:
-    bignumber.js "^4.0.2"
 
 web3@^0.20.1, web3@^0.20.2:
   version "0.20.2"
